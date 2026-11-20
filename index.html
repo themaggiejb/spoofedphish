@@ -1,1 +1,86 @@
 <!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background-image: url("background.png");
+        background-repeat: no-repeat; 
+        background-position: center center; 
+        background-size: cover; 
+        background-attachment: fixed;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        min-height: 100vh;
+      }
+      .button-class1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: none;
+        padding: 0;
+        background: transparent;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+      .button-class2 {
+        position: absolute;
+        top: 30%;
+        left: 70%;
+        transform: translate(-50%, -50%);
+        border: none;
+        padding: 0;
+        background: transparent;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+      .button-class3 {
+        position: absolute;
+        top: 50%;
+        left: 90%;
+        transform: translate(-50%, -50%);
+        border: none;
+        padding: 0;
+        background: transparent;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+
+      .button-class1 img {
+          width: 120px;  
+          height: auto;
+          display: block;
+      }
+      .button-class2 img {
+          width: 120px;  
+          height: auto;
+          display: block;
+      }
+      .button-class3 img {
+          width: 120px;  
+          height: auto;
+          display: block;
+      }
+    </style>
+  </head>
+  <head>
+  <script>
+  function clicc(){
+  document.body.indexHTML = "<div class='section'><video autoplay><source src='' type='video/mp4'></video></div>"
+  }
+  </script>
+  </head>
+  <body>
+   <button class="button-class1" onclick="clicc(), location.href='consume.html'">
+      <img src="consume_button.png" alt="Build Consume Button"/>
+    </button>
+    <button class="button-class2" onclick="clicc(), location.href='devour.html'">
+      <img src="devour_button.png" alt="Build Devour Button"/>
+    </button>
+    <button class="button-class3" onclick="clicc(), location.href='sell.html'">
+      <img src="sell_button.png" alt="Build Sell Button"/>
+    </button>
+  </body>
+</html>
+
