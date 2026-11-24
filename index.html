@@ -75,22 +75,24 @@
           opacity: 0.4
       }
     </style>
-  </head>
-  <head>
   <script>
-  function clicc(){
-  document.body.indexHTML = "<div class='section'><video autoplay><source src='' type='video/mp4'></video></div>"
-  }
-  </script>
+function clicc(page) {
+    document.body.innerHTML = "<div class='section'><video autoplay muted><source src='yourvideo.mp4' type='video/mp4'></video></div>";
+
+    setTimeout(function () {
+        location.href = page;
+    }, 3000); // 3000 ms = 3 seconds
+}
+</script>
   </head>
   <body>
-   <button class="button-class1" onclick="clicc(), location.href='consume.html'">
+   <button class="button-class1" onclick="clicc('consume.html')">
       <img src="button1.png" alt="Build Consume Button"/>
     </button>
-    <button class="button-class2" onclick="clicc(), location.href='devour.html'">
+    <button class="button-class2" onclick="clicc('devour.html')">
       <img src="button2.png" alt="Build Devour Button"/>
     </button>
-    <button class="button-class3" onclick="clicc(), location.href='sell.html'">
+    <button class="button-class3" onclick="clicc('sell.html')">
       <img src="button3.png" alt="Build Sell Button"/>
     </button>
   </body>
